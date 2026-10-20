@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="CHAOSRUNTIME" package="com.chaos.chaosengine" version="1.1.0" company="Feiling Tech Forge LLC ©" />
+	<app main="Main" path="Export" file="CHAOSRUNTIME" />
+	
+	<window width="0" height="0" background="null" if="html5" resizable="false" />
+	<window allow-high-dpi="true" if="html5" />
+	
+	<haxedef name="webgl" if="html5" />.
+
+	
+	<source path="Source" />
+	<assets path="Assets" rename="assets" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<source path="../_FRAMEWORK/CHAOS_UI_HX" />
+	<source path="../_FRAMEWORK/CHAOS_ENGINE" />
+	
+</project>
