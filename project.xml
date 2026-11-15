@@ -7,15 +7,15 @@
 	<window width="0" height="0" background="null" if="html5" resizable="false" />
 	<window allow-high-dpi="true" if="html5" />
 	
-	<haxedef name="webgl" if="html5" />.
+	<haxedef name="webgl" if="html5" />
 
 	
 	<source path="Source" />
-	<assets path="Assets" rename="assets" />
+	<assets path="Assets" rename="assets" if="exists:Assets" />
+	<assets path="project.json" rename="project.json" if="desktop" unless="ide_release" />
 	
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />
-	<source path="../_FRAMEWORK/CHAOS_UI_HX" />
-	<source path="../_FRAMEWORK/CHAOS_ENGINE" />
+	<haxelib name="chaos-engine" />
 	
 </project>
