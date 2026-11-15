@@ -1,0 +1,14 @@
+-cp Source
+-cp Native
+-lib lime
+-lib openfl
+-lib actuate
+-lib chaos-engine
+--remap flash:openfl
+-D openfl-native
+-D mac
+-D macos
+-D HXCPP_CLANG
+-D dll_link
+-D dll_export
+-main ChaosLibrary

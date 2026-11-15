@@ -12,7 +12,7 @@
 	
 	<source path="Source" />
 	<assets path="Assets" rename="assets" if="exists:Assets" />
-	<assets path="project.json" rename="project.json" if="desktop" unless="ide_release" />
+	<assets path="project.json" rename="project.json" if="desktop" />
 	
 	<haxelib name="openfl" />
 	<haxelib name="actuate" />

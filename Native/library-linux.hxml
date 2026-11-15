@@ -1,0 +1,14 @@
+-cp Source
+-cp Native
+-lib lime
+-lib openfl
+-lib actuate
+-lib chaos-engine
+--remap flash:openfl
+-D openfl-native
+-D linux
+-D HXCPP_M64
+-D dll_link
+-D dll_export
+-main ChaosLibrary
+-cpp Export/linux-library/obj
