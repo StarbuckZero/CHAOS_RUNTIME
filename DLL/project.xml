@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <include path="../project.xml" />
+  <app path="Export" file="CHAOSRUNTIME" />
+  <source path="Source" />
+  <haxedef name="chaos_dll" />
+  <haxedef name="dll_link" />
+  <haxeflag name="--macro" value="haxe.macro.Compiler.addMetadata('@:build(DllBuild.configure())', 'ApplicationMain')" />
+  <haxeflag name="--macro" value="haxe.macro.Compiler.addMetadata('@:build(DllBuild.configureSystem())', 'lime.system.System')" />
+  <haxeflag name="--macro" value="haxe.macro.Compiler.addMetadata('@:build(DllBuild.configureBackend())', 'lime._internal.backend.native.NativeApplication')" />
+</project>
